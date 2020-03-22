@@ -1,0 +1,116 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x18 J1
+U 1 1 5E76379F
+P 5050 3800
+F 0 "J1" H 5130 3792 50  0000 L CNN
+F 1 "Conn_01x18" H 5130 3701 50  0000 L CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x18_P1.27mm_Vertical" H 5050 3800 50  0001 C CNN
+F 3 "~" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x18 J2
+U 1 1 5E76D503
+P 6150 3900
+F 0 "J2" H 6068 2775 50  0000 C CNN
+F 1 "Conn_01x18" H 6068 2866 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x18_P1.27mm_Vertical" H 6150 3900 50  0001 C CNN
+F 3 "~" H 6150 3900 50  0001 C CNN
+	1    6150 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E7770CF
+P 5300 2500
+F 0 "D2" H 5293 2716 50  0000 C CNN
+F 1 "LED" H 5293 2625 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5300 2500 50  0001 C CNN
+F 3 "~" H 5300 2500 50  0001 C CNN
+	1    5300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E778E2F
+P 5300 2150
+F 0 "D1" H 5293 2366 50  0000 C CNN
+F 1 "LED" H 5293 2275 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5300 2150 50  0001 C CNN
+F 3 "~" H 5300 2150 50  0001 C CNN
+	1    5300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E77CFBC
+P 5600 2500
+F 0 "R2" V 5393 2500 50  0000 C CNN
+F 1 "R" V 5484 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5530 2500 50  0001 C CNN
+F 3 "~" H 5600 2500 50  0001 C CNN
+	1    5600 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E77D54B
+P 5600 2150
+F 0 "R1" V 5393 2150 50  0000 C CNN
+F 1 "R" V 5484 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5530 2150 50  0001 C CNN
+F 3 "~" H 5600 2150 50  0001 C CNN
+	1    5600 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5E77DBE3
+P 5050 2150
+F 0 "#PWR01" H 5050 1900 50  0001 C CNN
+F 1 "GND" H 5055 1977 50  0000 C CNN
+F 2 "" H 5050 2150 50  0001 C CNN
+F 3 "" H 5050 2150 50  0001 C CNN
+	1    5050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5E77EC84
+P 5050 2500
+F 0 "#PWR02" H 5050 2250 50  0001 C CNN
+F 1 "GND" H 5055 2327 50  0000 C CNN
+F 2 "" H 5050 2500 50  0001 C CNN
+F 3 "" H 5050 2500 50  0001 C CNN
+	1    5050 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2150 5150 2150
+Wire Wire Line
+	5050 2500 5150 2500
+Text Label 5750 2500 0    50   ~ 0
+LED2
+Text Label 6350 3300 0    50   ~ 0
+LED1
+Text Label 5750 2150 0    50   ~ 0
+LED1
+Text Label 6350 3200 0    50   ~ 0
+LED2
+$EndSCHEMATC
